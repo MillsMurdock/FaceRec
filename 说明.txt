@@ -1,0 +1,7 @@
+cache:服务器拿到平板上传的待识别图片后将图片命名为unknown.jpg放进cache
+DataBase:用来存用户的人脸
+ResizeFace:用来放缩小像素之后用于特征提取的人脸
+face_test.py:人脸识别
+resize:对DataBase中的人脸进行处理后放入ResizeFace
+saveFeature:获取注册用户的图片特征并保存
+forServer:服务器拿到上传的图片之后直接调用forServer.py image_name.jpg可以进行需要的处理
